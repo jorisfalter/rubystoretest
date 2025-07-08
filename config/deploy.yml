@@ -7,7 +7,11 @@ image: jorisboris/storis
 # Deploy to these servers.
 servers:
   web:
-    - 172.16.33.60
+    hosts:
+      - 172.16.33.60
+    options:
+      publish:
+        - "81:3000"
   # job:
   #   hosts:
   #     - 192.168.0.1
