@@ -1,9 +1,11 @@
-<h1><%= @product.name %></h1>
+<p><%= link_to "Back", products_path %></p>
 
 
+<section class="product-info">
+    <h1><%= @product.name %></h1>
 
+</section>
 
-<%= link_to "Back", products_path %>
 
 <% if authenticated? %>
 
